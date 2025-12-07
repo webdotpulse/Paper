@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/webdotpulse/Paper#readme",
   "dependencies": {
+    "@playwright/test": "^1.57.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "playwright": "^1.57.0",
     "sass": "^1.77.0",
     "vite": "^5.2.0"
   }
