@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bauhaus Theme Demo</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-beige py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BAUHAUS</a>
+        <button class="navbar-toggler border-2 border-dark rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active fw-bold" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="#components">Components</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section (Poster Recreation) -->
+    <section class="container my-5">
+      <div class="row g-0 align-items-center mb-5">
+        <div class="col-lg-6">
+          <h1 class="display-1 fw-bold text-uppercase mb-3" style="line-height: 0.9;">Modern<br>Bauhaus<br>Theme</h1>
+          <p class="lead mb-4">A geometric, minimalist Bootstrap 5 theme inspired by the classic 1919-1933 art movement.</p>
+          <button class="btn btn-primary btn-lg rounded-0 px-5 py-3">Explore</button>
+          <button class="btn btn-outline-primary btn-lg rounded-circle p-4 ms-3"><i class="bi bi-arrow-down"></i> &#8595;</button>
+        </div>
+
+        <!-- The Geometric Grid Art -->
+        <div class="col-lg-6">
+          <div class="row g-0" style="aspect-ratio: 3/4;">
+            <!-- Row 1 -->
+            <div class="col-4 bg-black bauhaus-quarter-bottom-left"></div>
+            <div class="col-4 bg-black bauhaus-quarter-bottom-right"></div>
+            <div class="col-4 bg-white rounded-circle"></div>
+
+            <!-- Row 2 -->
+            <div class="col-8 bg-black bauhaus-arch-top" style="border-radius: 200px 0 0 0;"></div> <!-- Custom shape approx -->
+            <div class="col-4 bg-black bauhaus-quarter-top-right"></div>
+
+            <!-- Row 3 -->
+            <div class="col-4 bg-white bauhaus-quarter-bottom-right"></div>
+            <div class="col-4 bg-black bauhaus-circle"></div>
+            <div class="col-4 bg-black bauhaus-quarter-top-right"></div>
+
+            <!-- Row 4 -->
+            <div class="col-4 bg-black bauhaus-quarter-top-right"></div>
+            <div class="col-4 bg-black bauhaus-quarter-top-left"></div>
+            <div class="col-4 bg-black"></div>
+          </div>
+          <div class="d-flex justify-content-between mt-2 text-uppercase small fw-bold">
+            <span>Bauhaus</span>
+            <span>Classic Shapes 1919-1933</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components Showcase -->
+    <section id="components" class="bg-white py-5 border-top border-dark border-2">
+      <div class="container">
+        <h2 class="display-4 fw-bold mb-5 text-uppercase">Components</h2>
+
+        <div class="row g-5">
+          <!-- Buttons -->
+          <div class="col-md-6">
+            <h3 class="h4 fw-bold mb-4">Buttons</h3>
+            <div class="d-flex gap-2 flex-wrap mb-3">
+              <button class="btn btn-primary">Primary Button</button>
+              <button class="btn btn-outline-primary">Outline Button</button>
+              <button class="btn btn-dark rounded-pill">Pill Button</button>
+            </div>
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="btn btn-lg btn-primary">Large</button>
+              <button class="btn btn-sm btn-primary">Small</button>
+              <button class="btn btn-primary disabled">Disabled</button>
+            </div>
+          </div>
+
+          <!-- Forms -->
+          <div class="col-md-6">
+            <h3 class="h4 fw-bold mb-4">Forms</h3>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label fw-bold">Password</label>
+                <input type="password" class="form-control rounded-pill" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input border-2 border-dark" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+
+          <!-- Cards -->
+          <div class="col-md-12">
+            <h3 class="h4 fw-bold mb-4">Cards</h3>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="bg-black rounded-circle mb-3" style="width: 50px; height: 50px;"></div>
+                    <h5 class="card-title fw-bold">Geometric Design</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary btn-sm rounded-0">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body bg-black text-white">
+                    <div class="bg-white rounded-circle mb-3" style="width: 50px; height: 50px;"></div>
+                    <h5 class="card-title fw-bold">Bold Contrast</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-light btn-sm rounded-0">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex gap-1 mb-3">
+                        <div class="bg-black bauhaus-quarter-bottom-left" style="width: 25px;"></div>
+                        <div class="bg-black bauhaus-quarter-bottom-right" style="width: 25px;"></div>
+                    </div>
+                    <h5 class="card-title fw-bold">Shape Theory</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm rounded-0">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- Alerts & Badges -->
+           <div class="col-md-6">
+             <h3 class="h4 fw-bold mb-4">Alerts & Badges</h3>
+             <div class="alert alert-primary border-2 border-dark rounded-0 bg-white text-dark" role="alert">
+               A simple primary alert—check it out!
+             </div>
+             <div class="alert alert-dark rounded-pill" role="alert">
+               A simple dark alert with rounded corners.
+             </div>
+             <div>
+                 <span class="badge bg-primary rounded-0">Primary</span>
+                 <span class="badge bg-secondary rounded-0">Secondary</span>
+                 <span class="badge bg-dark rounded-pill">Pill Badge</span>
+                 <span class="badge border border-dark text-dark rounded-circle p-2">99</span>
+             </div>
+           </div>
+
+           <!-- Modal Trigger -->
+           <div class="col-md-6">
+                <h3 class="h4 fw-bold mb-4">Modal</h3>
+                <button type="button" class="btn btn-primary rounded-0 w-100 py-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch Bauhaus Modal
+                </button>
+           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-5">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="display-5 fw-bold text-uppercase">Bauhaus</h2>
+                <p class="small text-white-50">LESS IS MORE.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Behance</a></li>
+                </ul>
+                <p class="small text-white-50">&copy; 2023 Bauhaus Theme.</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 border-2 border-dark">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title fw-bold text-uppercase" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>The Bauhaus movement (1919–1933) is renowned for its unique aesthetic that combines fine art with arts and crafts.</p>
+          </div>
+          <div class="modal-footer border-top-0">
+            <button type="button" class="btn btn-outline-primary rounded-0" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary rounded-0">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

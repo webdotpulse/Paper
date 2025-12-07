@@ -1,0 +1,143 @@
+// 1. Color System (Bauhaus Palette)
+$body-bg: #D6CFCB; // Beige/Taupe from the poster
+$body-color: #000000;
+$primary: #000000;
+$secondary: #FFFFFF;
+$success: #28a745; // Keep standard for now, but maybe darken
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #FFFFFF;
+$dark: #000000;
+
+// 2. Typography
+// Importing Google Font in the HTML or via CSS import
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;900&display=swap');
+
+$font-family-sans-serif: 'Jost', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-weight-base: 400;
+$headings-font-weight: 700;
+
+// 3. Components
+$border-radius: 0; // Default sharp edges
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$btn-font-weight: 700;
+$btn-text-transform: uppercase;
+$btn-letter-spacing: 1px;
+
+$card-bg: transparent;
+$card-border-width: 0;
+$card-border-radius: 0;
+
+// 4. Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// 5. Custom Bauhaus Styles & Utilities
+
+// Bauhaus Shapes
+.bauhaus-circle {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.bauhaus-quarter-top-left {
+  border-top-left-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bauhaus-quarter-top-right {
+  border-top-right-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bauhaus-quarter-bottom-left {
+  border-bottom-left-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bauhaus-quarter-bottom-right {
+  border-bottom-right-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bauhaus-arch-top {
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  aspect-ratio: 1/1; // Adjust based on width/height
+}
+
+// Background Utilities
+.bg-beige { background-color: $body-bg; }
+.bg-black { background-color: $black; color: $white; }
+.bg-white { background-color: $white; color: $black; }
+
+// Layout Utilities
+.bauhaus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0; // Tightly packed like the poster
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  min-height: 150px; // fallback
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Custom Component Overrides
+.btn-primary {
+  background-color: $primary;
+  border: 2px solid $primary;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    border-color: $primary;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  border: 2px solid $primary;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.form-control {
+  border: 2px solid $dark;
+  background-color: rgba(255,255,255,0.5);
+  &:focus {
+    box-shadow: none;
+    background-color: $white;
+    border-color: $dark;
+  }
+}
+
+.card {
+  border: none;
+  background: transparent;
+  .card-body {
+    padding: 2rem;
+    background: $white;
+    border: 2px solid $black; // Give cards a border
+  }
+}
+
+// Navbar
+.navbar {
+  border-bottom: 2px solid $black;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
